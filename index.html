@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Treepper - Choose your next trip based on who you'll meet.">
+    <title>Treepper - A new way to travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass-effect">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="assets/logo_final.png" alt="Treepper Logo" class="nav-logo">
+                <span class="brand-text">treepper</span>
+            </div>
+            <div class="nav-controls">
+                <div class="lang-toggle">
+                    <button id="btn-en" class="lang-btn active">EN</button>
+                    <button id="btn-es" class="lang-btn">ES</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <h1 id="t-hero-title" class="hero-title">Choose your next trip based on who you’ll meet</h1>
+                <p id="t-hero-sub" class="hero-subtitle">Discover people staying in your same hotel — or decide your destination based on where the right people are.</p>
+                <div class="hero-ctas">
+                    <a href="#" class="store-link"><img src="assets/app_store.png" alt="Download on the App Store" class="store-badge"></a>
+                    <a href="#" class="store-link"><img src="assets/google_play.png" alt="Get it on Google Play" class="store-badge"></a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in fade-delay">
+                <div class="floating-mockup">
+                    <img src="assets/hero_mockup.png" alt="Treepper App Interface" class="mockup-img">
+                    <div class="glow-bg"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. How it works -->
+    <section class="how-it-works section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in" id="t-hiw-title">How it works</h2>
+            <div class="steps-grid">
+                <div class="step-card fade-in">
+                    <div class="step-icon"><i data-lucide="plane"></i></div>
+                    <h3 id="t-hiw-step1-title">Add your trip</h3>
+                    <p id="t-hiw-step1-desc">Enter your destination, hotel, and dates.</p>
+                </div>
+                <div class="step-card fade-in fade-delay-1">
+                    <div class="step-icon"><i data-lucide="users"></i></div>
+                    <h3 id="t-hiw-step2-title">Discover who will be there</h3>
+                    <p id="t-hiw-step2-desc">See profiles of people staying in the same place.</p>
+                </div>
+                <div class="step-card fade-in fade-delay-2">
+                    <div class="step-icon"><i data-lucide="message-circle"></i></div>
+                    <h3 id="t-hiw-step3-title">Connect before you travel</h3>
+                    <p id="t-hiw-step3-desc">Chat and make plans before you even arrive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Core Differentiator -->
+    <section class="differentiator section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in" id="t-diff-title">Two ways to experience Treepper</h2>
+            
+            <div class="split-layout">
+                <div class="split-card left fade-in">
+                    <div class="card-content">
+                        <div class="icon-wrapper"><i data-lucide="map-pin"></i></div>
+                        <h3 class="split-title" id="t-diff-left-title">You already have a destination</h3>
+                        <ul class="feature-list">
+                            <li><i data-lucide="check"></i> <span id="t-diff-left-1">Add your trip</span></li>
+                            <li><i data-lucide="check"></i> <span id="t-diff-left-2">See who matches with you</span></li>
+                            <li><i data-lucide="check"></i> <span id="t-diff-left-3">Start connecting</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="split-card right highlight fade-in fade-delay">
+                    <div class="card-content">
+                        <div class="icon-wrapper accent"><i data-lucide="compass"></i></div>
+                        <h3 class="split-title" id="t-diff-right-title">Not sure where to go?</h3>
+                        <ul class="feature-list">
+                            <li><i data-lucide="check"></i> <span id="t-diff-right-1">Explore destinations and hotels</span></li>
+                            <li><i data-lucide="check"></i> <span id="t-diff-right-2">See where people are</span></li>
+                            <li><i data-lucide="check"></i> <span id="t-diff-right-3">Choose your trip based on that</span></li>
+                        </ul>
+                    </div>
+                    <div class="glow-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Visual Social Proof Section -->
+    <section class="social-proof section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in" id="t-social-title">See who you could meet</h2>
+            
+            <div class="social-cards">
+                <div class="social-card fade-in">
+                    <div class="card-header">
+                        <h4>Rome – Hotel Artemide</h4>
+                        <span class="badge">8 people</span>
+                    </div>
+                    <div class="avatar-group">
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar more">+4</div>
+                    </div>
+                </div>
+                <div class="social-card fade-in fade-delay">
+                    <div class="card-header">
+                        <h4>Ibiza – Ushuaïa</h4>
+                        <span class="badge accent">12 people</span>
+                    </div>
+                    <div class="avatar-group">
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar"></div>
+                        <div class="avatar more">+8</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. App Preview Section -->
+    <section class="app-preview section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in" id="t-preview-title">Designed for real connections</h2>
+            
+            <div class="carousel fade-in">
+                <div class="carousel-track">
+                    <img src="assets/profile_mockup.png" alt="Profile UI" class="preview-mockup">
+                    <img src="assets/hotel_matches_mockup.png" alt="Matches UI" class="preview-mockup highlight-mockup">
+                    <img src="assets/chat_mockup.png" alt="Chat UI" class="preview-mockup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Value Proposition -->
+    <section class="value-prop section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in" id="t-value-title">A new way to travel</h2>
+            
+            <div class="value-grid">
+                <div class="value-item fade-in">
+                    <div class="value-icon"><i data-lucide="handshake"></i></div>
+                    <h4 id="t-value-1">Meet people before arriving</h4>
+                </div>
+                <div class="value-item fade-in fade-delay-1">
+                    <div class="value-icon"><i data-lucide="eye"></i></div>
+                    <h4 id="t-value-2">Travel with real expectations</h4>
+                </div>
+                <div class="value-item fade-in fade-delay-2">
+                    <div class="value-icon"><i data-lucide="flame"></i></div>
+                    <h4 id="t-value-3">Discover socially active destinations</h4>
+                </div>
+                <div class="value-item fade-in fade-delay-3">
+                    <div class="value-icon"><i data-lucide="heart"></i></div>
+                    <h4 id="t-value-4">Turn trips into connections</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Final CTA -->
+    <section class="final-cta section text-center fade-in">
+        <div class="container">
+            <h2 class="section-title" id="t-final-title">Start traveling differently</h2>
+            <div class="hero-ctas final-ctas">
+                <a href="#" class="store-link"><img src="assets/app_store.png" alt="Download on the App Store" class="store-badge"></a>
+                <a href="#" class="store-link"><img src="assets/google_play.png" alt="Get it on Google Play" class="store-badge"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo_final.png" alt="Treepper Logo" class="footer-logo-img">
+                <span class="brand-text">treepper</span>
+            </div>
+            <div class="footer-links">
+                <a href="#" id="t-footer-privacy">Privacy</a>
+                <a href="#" id="t-footer-terms">Terms</a>
+                <a href="mailto:info@treepper.com" id="t-footer-contact">Contact</a>
+            </div>
+            <div class="footer-lang">
+                <button class="footer-lang-btn active" data-lang="en">EN</button>
+                <button class="footer-lang-btn" data-lang="es">ES</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
