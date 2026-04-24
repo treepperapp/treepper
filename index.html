@@ -210,6 +210,136 @@
         </div>
     </footer>
 
+    <!-- Terms Modal -->
+    <div id="terms-modal" class="modal-overlay">
+        <div class="modal-container glass-effect">
+            <button class="modal-close" id="close-terms">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-content">
+                <div id="terms-content-en" class="terms-lang-content">
+                    <h2 class="modal-title">Terms and conditions of use</h2>
+                    <div class="terms-body">
+                        <h3>1. Nature of the service</h3>
+                        <p>Treepper is a technological platform that facilitates connections between users who share destinations and travel dates. Treepper is not a travel agency or accommodation provider. The contractual relationship of the trip (flights, hotels, etc.) is external to the app.</p>
+                        
+                        <h3>2. Registration and verification</h3>
+                        <ul>
+                            <li><strong>Minimum age:</strong> You must be at least 18 years old to use Treepper.</li>
+                            <li><strong>Identity:</strong> By using third-party systems (Google, Apple), the user agrees to provide truthful information. The creation of fake profiles or identity theft is not permitted.</li>
+                        </ul>
+
+                        <h3>3. Rules of conduct and safety</h3>
+                        <ul>
+                            <li><strong>Interaction:</strong> Treepper facilitates contact through an internal chat. Harassment, hate speech, or any illegal activity is prohibited.</li>
+                            <li><strong>Responsibility:</strong> The user is solely responsible for their interactions. We strongly recommend not sharing financial data or meeting strangers without taking basic safety precautions.</li>
+                        </ul>
+
+                        <h3>4. Content ownership</h3>
+                        <p>By uploading photos to their profile, the user grants Treepper a non-exclusive license to display said content to other users for the purpose of executing the travel "matching" service.</p>
+
+                        <h3>5. Limitation of liability</h3>
+                        <p>Treepper does not guarantee that hotel information (obtained via external API) is 100% accurate in real-time, nor is it responsible for trip cancellations or incidents between users.</p>
+                    </div>
+                </div>
+                <div id="terms-content-es" class="terms-lang-content" style="display: none;">
+                    <h2 class="modal-title">Términos y condiciones de uso</h2>
+                    <div class="terms-body">
+                        <h3>1. Naturaleza del servicio</h3>
+                        <p>Treepper es una plataforma tecnológica que facilita la conexión entre usuarios que coinciden en destino y fechas de viaje. Treepper no es una agencia de viajes ni un proveedor de alojamiento. La relación contractual del viaje (vuelos, hoteles, etc.) es ajena a la app.</p>
+                        
+                        <h3>2. Registro y verificación</h3>
+                        <ul>
+                            <li><strong>Edad mínima:</strong> Debes tener al menos 18 años para usar Treepper.</li>
+                            <li><strong>Identidad:</strong> Al usar sistemas de terceros (Google, Apple), el usuario se compromete a facilitar información veraz. No se permite la creación de perfiles falsos o suplantación de identidad.</li>
+                        </ul>
+
+                        <h3>3. Normas de conducta y seguridad</h3>
+                        <ul>
+                            <li><strong>Interacción:</strong> Treepper facilita el contacto a través de un chat interno. Queda prohibido el acoso, lenguaje de odio o cualquier actividad ilegal.</li>
+                            <li><strong>Responsabilidad:</strong> El usuario es el único responsable de sus interacciones. Recomendamos encarecidamente no compartir datos financieros ni encontrarse con desconocidos sin tomar precauciones de seguridad básicas.</li>
+                        </ul>
+
+                        <h3>4. Propiedad del contenido</h3>
+                        <p>Al subir fotos a su perfil, el usuario otorga a Treepper una licencia no exclusiva para mostrar dicho contenido a otros usuarios con el fin de ejecutar el servicio de "matching" de viajes.</p>
+
+                        <h3>5. Limitación de Responsabilidad</h3>
+                        <p>Treepper no garantiza que la información de los hoteles (obtenida vía API externa) sea 100% exacta en tiempo real, ni se hace responsable de cancelaciones de viajes o incidentes entre usuarios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div id="privacy-modal" class="modal-overlay">
+        <div class="modal-container glass-effect">
+            <button class="modal-close" id="close-privacy">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-content">
+                <div id="privacy-content-en" class="privacy-lang-content">
+                    <h2 class="modal-title">Privacy policy</h2>
+                    <div class="terms-body">
+                        <p><strong>Data controller:</strong> TREEPPER LLC</p>
+                        <p><strong>Purpose:</strong> To connect users with matching travel plans.</p>
+
+                        <h3>1. Data we collect</h3>
+                        <ul>
+                            <li><strong>Identification data:</strong> Name, gender, date of birth, and photos.</li>
+                            <li><strong>Travel data:</strong> Destination city, selected hotel, and stay dates.</li>
+                            <li><strong>Communications:</strong> Messages sent through the internal chat.</li>
+                        </ul>
+
+                        <h3>2. Use of information (the "match")</h3>
+                        <p>Your travel data (hotel and dates) will be visible to other users searching for the same destination on the same dates. Your profile (photos and description) will be shared with those users who match your filtering criteria or vice versa.</p>
+
+                        <h3>3. Third parties accessing data</h3>
+                        <ul>
+                            <li><strong>External APIs:</strong> For selecting cities and hotels, we send queries to providers (e.g., Google Places, Booking API). We <strong>do not</strong> send your personal data to these APIs, only the search query.</li>
+                            <li><strong>Authentication systems:</strong> Google/Apple receive the login request to validate your identity.</li>
+                        </ul>
+
+                        <h3>4. User rights (GDPR)</h3>
+                        <p>You have the right to access, rectify, or delete your data. Since the trip list is editable, you can delete any trip record at any time, which will immediately remove you from other users' matching lists.</p>
+
+                        <h3>5. Data retention</h3>
+                        <p>Data will be kept while the account is active. Past trips will be kept in the user's history unless the user decides to delete them.</p>
+                    </div>
+                </div>
+                <div id="privacy-content-es" class="privacy-lang-content" style="display: none;">
+                    <h2 class="modal-title">Política de privacidad</h2>
+                    <div class="terms-body">
+                        <p><strong>Responsable del Tratamiento:</strong> TREEPPER LLC</p>
+                        <p><strong>Finalidad:</strong> Conectar usuarios con planes de viaje coincidentes.</p>
+
+                        <h3>1. Datos que recopilamos</h3>
+                        <ul>
+                            <li><strong>Datos de identificación:</strong> Nombre, sexo, fecha de nacimiento y fotos.</li>
+                            <li><strong>Datos de viaje:</strong> Ciudad de destino, hotel seleccionado y fechas de estancia.</li>
+                            <li><strong>Comunicaciones:</strong> Mensajes enviados a través del chat interno.</li>
+                        </ul>
+
+                        <h3>2. Uso de la Información (el "match")</h3>
+                        <p>Tus datos de viaje (hotel y fechas) serán visibles para otros usuarios que busquen el mismo destino en las mismas fechas. Tu perfil (fotos y descripción) será compartido con aquellos usuarios que coincidan con tus criterios de filtrado o viceversa.</p>
+
+                        <h3>3. Terceros que acceden a datos</h3>
+                        <ul>
+                            <li><strong>APIs externas:</strong> Para la selección de ciudades y hoteles, enviamos consultas a proveedores (ej. Google Places, Booking API). <strong>No</strong> enviamos tus datos personales a estas APIs, solo la consulta de búsqueda.</li>
+                            <li><strong>Sistemas de autenticación:</strong> Google/Apple reciben la solicitud de login para validar tu identidad.</li>
+                        </ul>
+
+                        <h3>4. Derechos del usuario (GDPR)</h3>
+                        <p>Tienes derecho a acceder, rectificar o suprimir tus datos. Dado que la lista de viajes es editable, puedes eliminar cualquier registro de viaje en cualquier momento, lo que te hará desaparecer de las listas de coincidencia de otros usuarios de forma inmediata.</p>
+
+                        <h3>5. Conservación de datos</h3>
+                        <p>Los datos se conservarán mientras la cuenta esté activa. Los viajes pasados se mantendrán en el historial del usuario a menos que este decida borrarlos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>

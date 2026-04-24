@@ -119,7 +119,69 @@ function setLanguage(lang) {
             }, 150);
         }
     });
+
+    // Update modal content language
+    const termsEn = document.getElementById('terms-content-en');
+    const termsEs = document.getElementById('terms-content-es');
+    if (termsEn && termsEs) {
+        if (lang === 'en') {
+            termsEn.style.display = 'block';
+            termsEs.style.display = 'none';
+        } else {
+            termsEn.style.display = 'none';
+            termsEs.style.display = 'block';
+        }
+    }
+
+    const privacyEn = document.getElementById('privacy-content-en');
+    const privacyEs = document.getElementById('privacy-content-es');
+    if (privacyEn && privacyEs) {
+        if (lang === 'en') {
+            privacyEn.style.display = 'block';
+            privacyEs.style.display = 'none';
+        } else {
+            privacyEn.style.display = 'none';
+            privacyEs.style.display = 'block';
+        }
+    }
 }
+
+// Modal Logic Helper
+function initModal(btnId, modalId, closeId) {
+    const btn = document.getElementById(btnId);
+    const modal = document.getElementById(modalId);
+    const closeBtn = document.getElementById(closeId);
+
+    if (btn && modal && closeBtn) {
+        const openModal = (e) => {
+            e.preventDefault();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeModal = () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        btn.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    }
+}
+
+// Initialize Modals
+initModal('t-footer-terms', 'terms-modal', 'close-terms');
+initModal('t-footer-privacy', 'privacy-modal', 'close-privacy');
 
 // Event Listeners for Language Toggle
 document.getElementById('btn-en').addEventListener('click', () => setLanguage('en'));
