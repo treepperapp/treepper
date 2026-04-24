@@ -116,7 +116,7 @@ p { color: var(--text-secondary); }
     left: 0;
     width: 100%;
     z-index: 100;
-    padding: 20px 0;
+    padding: 15px 0;
     transition: var(--transition);
 }
 
@@ -187,7 +187,7 @@ p { color: var(--text-secondary); }
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 160px;
     position: relative;
     overflow: hidden;
 }
@@ -621,6 +621,9 @@ p { color: var(--text-secondary); }
     .footer-content { flex-direction: column; gap: 24px; text-align: center; }
     .hero-ctas { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; }
     .nav-logo { height: 60px; }
+    .brand-text { font-size: 1.8rem; }
+    .navbar { padding: 10px 0; }
+    .hero { padding-top: 120px; min-height: auto; }
 }
 
 /* Modal Styles */
